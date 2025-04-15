@@ -1,0 +1,12 @@
+export const PAIRS: [string, string][] = [
+  ["aroma", "uroma"],
+  ["bibel", "biber"],
+  ["arm", "alm"],
+  ["augen", "algen"],
+  ["geige", "feige"],
+  ["feige", "feile"],
+  ["feile", "seile"],
+  ["haken", "hafen"],
+  ["tisch", "fisch"],
+  ["wagen", "magen"]
+]
