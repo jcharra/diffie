@@ -11,5 +11,7 @@ export const PAIRS: [string, string][] = [
   ["wagen", "magen"],
   ["garten", "gerten"],
   ["mond", "mund"],
-  ["weide", "heide"]
+  ["weide", "heide"],
+  ["wanne", "kanne"],
+  ["schaufel", "schaukel"]
 ]
