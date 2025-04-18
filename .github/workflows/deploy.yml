@@ -3,7 +3,7 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or 'master', depending on your default branch
+      - main
 
 permissions:
   contents: read
@@ -30,9 +30,9 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
-          path: ./dist  # change to ./build if that's your output dir
+          path: ./dist
 
   deploy:
     needs: build
