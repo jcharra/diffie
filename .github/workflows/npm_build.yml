@@ -36,6 +36,9 @@ jobs:
     permissions:
       pages: write # to deploy to Pages
       id-token: write
+      contents: read
+      actions: read
+      deployments: write
 
     environment:
       name: github-pages
