@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <div className="container">
-        <h1>Diffie</h1>
         <AppContainer />
       </div>
     </>
