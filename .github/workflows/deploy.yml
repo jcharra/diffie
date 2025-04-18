@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: diffie-artifact
+          name: github-pages
           path: ./dist
 
   deploy:
@@ -42,7 +42,7 @@ jobs:
       id-token: write
       actions: read
     environment:
-      name: diffie-artifact
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
