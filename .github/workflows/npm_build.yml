@@ -22,17 +22,12 @@ jobs:
       - name: Build
         run: |
           npm install
-          echo "export const TESTING_DEVICES_IDS = []" > src/testingDevicesIds.ts
-          npm run build --prod
-          #cp build/index.html build/404.html
-          #cp public/support.html build/
-          #cp public/privacy.html build/
-          #cp public/app-ads.txt build/
-
+          npm run build 
+          
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
-          path: "build/"
+          path: "dist/"
 
   deploy:
     needs: build
